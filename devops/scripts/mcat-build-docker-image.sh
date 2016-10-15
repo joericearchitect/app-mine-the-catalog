@@ -13,8 +13,8 @@ $DIR/setenv.sh
 
 cd $APP_CODE_DIR
 
-docker build -t $SITE_IMAGE_NAME_LOCAL
+docker build -t $SITE_IMAGE_NAME_LOCAL .
 
-docker tag $SITE_IMAGE_NAME_LOCAL SITE_IMAGE_NAME_REPO
+docker tag $SITE_IMAGE_NAME_LOCAL $SITE_IMAGE_NAME_REPO
 
-docker push SITE_IMAGE_NAME_REPO .
+docker push $SITE_IMAGE_NAME_REPO .
