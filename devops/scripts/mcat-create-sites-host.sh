@@ -8,8 +8,9 @@
 #       export AWS_ACCESS_KEY_ID=<Secret>
 #       export AWS_SECRET_ACCESS_KEY=<Super_Top_Secret>
 # *********************************************************************************
+
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
-$DIR/setenv.sh
+source $DIR/setenv.sh
 
 docker-machine create -d amazonec2 --amazonec2-vpc-id=vpc-64260003 --amazonec2-region us-east-1 --amazonec2-instance-type "t2.micro" $MACHINE_NAME_SITE
