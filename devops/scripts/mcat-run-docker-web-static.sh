@@ -7,4 +7,4 @@
 #    Uses the Dockerfile in this same git repo
 # *********************************************************************************
 
-docker run -p 8080:8080 -d jarch/app-mine-the-catalog-web-static
+docker run -p 8081:8080 -d jarch/app-mine-the-catalog-web-static
