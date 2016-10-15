@@ -2,7 +2,7 @@
  services:
    nginx-proxy:
     image: jwilder/nginx-proxy
-    container_name: jarch-web-proxy
+    container_name: mcat-web-proxy-ngix
     ports:
       - "80:80"
     volumes:
