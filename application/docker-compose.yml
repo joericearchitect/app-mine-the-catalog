@@ -17,4 +17,5 @@
      restart: always
      environment: 
        VIRTUAL_HOST: www.minethecatalog.com
+       VIRTUAL_PORT: 8081
        
