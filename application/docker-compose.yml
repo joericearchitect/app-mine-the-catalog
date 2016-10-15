@@ -10,7 +10,7 @@
       
 
    jarch-site:
-     image: 193862077204.dkr.ecr.us-east-1.amazonaws.com/jarch:app-mcat-static-web:latest
+     image: 193862077204.dkr.ecr.us-east-1.amazonaws.com/jarch:app-mcat-static-web
      container_name: mcat-static-web
      ports:
        - "8081:8080"
