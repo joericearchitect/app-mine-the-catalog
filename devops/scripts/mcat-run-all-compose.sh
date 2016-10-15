@@ -11,6 +11,6 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 
 $DIR/setenv.sh
 
-docker rm $CONTAINER_NAME
+cd $APP_CODE_DIR
 
-docker run --name $CONTAINER_NAME -p 8081:8080 -d $NAMESPACE/$IMAGE_NAME
+docker-compose up -d
