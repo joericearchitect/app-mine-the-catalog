@@ -9,20 +9,21 @@
     <meta name="author" content="">
     <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Mine the Catalog - Where music DNA meetings Passion meets Community</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
     <link href="css/musiccatelog.css" rel="stylesheet">
   </head>
 
-  <body>
 
-    <nav class="navbar navbar-static-top navbar-dark bg-inverse">
-      <a class="navbar-brand" href="#">Project name</a>
+    <nav class="navbar navbar-static-top navbar-dark bg-inverse navbar-inverse navbar-fixed-top">
+      <a class="navbar-brand" href="#">Mine the Catalog</a>
       <ul class="nav navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -39,7 +40,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="jumbo" class="jumbotron mc-background">
       <div class="container">
-         <div class="mc-textbox-holder">
+         <div id="mc-text-holder" class="mc-textbox-holder affix" data-spy="affix" data-offset-top="240" >
          	<input name="k" class="mc-searchbox" type="text" placeholder="&nbsp;Search for your favorite artists, songs, genres, etc">
          </div>
       
@@ -87,19 +88,16 @@ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js" ></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/tether.js"></script>
-    <script src="js/bootstrap.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
     $( document ).ready(function() {
-
-        var backgroundNum = getRandomInt(1, 20);
-        /* var backgroundNum = 7; */
+ 
+        var backgroundNum = getRandomInt(1, 5)
+        /* var backgroundNum = 1; */ 
         
-        var urlString = 'url(images/background-' + backgroundNum + '.jpg)';
+        var urlString = 'url(images/mine-cat-background-' + backgroundNum + '.jpg)';
         console.log($('.mc-background').css("background-image"));
         console.log(urlString);
         $('.mc-background').css("background-image", urlString);
@@ -112,5 +110,15 @@ Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
     }
     </script>
   
-
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
 </body></html>

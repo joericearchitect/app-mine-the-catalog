@@ -4734,15 +4734,26 @@ a.tag:hover {
 }
 
 .jumbotron {
-    padding: 1rem 1rem;
-    margin-bottom: 0em;
-    background-color: #eceeef;
-    border-radius: .3rem
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee
 }
 	
 @media (min-width:544px) {
     .jumbotron {
-        padding: 10rem 0rem
+        padding-top: 48px;
+        padding-bottom: 48px
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px
+    }
+    .jumbotron .h1,
+    .jumbotron h1 {
+        font-size: 63px
     }
 }
 

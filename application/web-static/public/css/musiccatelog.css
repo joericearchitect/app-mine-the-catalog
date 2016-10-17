@@ -3,24 +3,73 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-.mc-background {
-	background: url('../images/background-7.jpg')  no-repeat;
-	background-size: cover;
-	min-height: 375px;
+body {
+	opacity: 3.5%
 }
 
+.mc-background {
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 500px;	
+	background-attachment: fixed; 
+}
 
+/* .mc-background {
+		
+	background-size: cover;
+	min-height: 500px;
+	background-attachment: fixed; 
+} */
 
+@media only screen and (max-width: 1200px) {
+    .mc-background {
+        background-position: top center
+    }
+}
+
+.affix {
+      top: 0;
+      position: fixed;
+}
+
+.affix + .mc-textbox-holder {
+      padding-top: 70px;
+}
+  
+/* @media (min-width:544px) {
+    .jumbotron {
+        padding-top: 16rem;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px
+    }
+    .jumbotron .h1,
+    .jumbotron h1 {
+        font-size: 63px
+    }
+} */
+@media screen and (min-width: 768px) {
+  .jumbotron {
+        padding-top: 30rem;
+  }
+}
 .mc-textbox-holder {
-	min-width: 200;
+	min-width: 200px;
+	width: 29rem%;
+	height: 7rem;
 	background-color: white;
 	opacity: 1;
-	box-shadow: inset 0px 0px 50px 0px white,5px 5px 5px 1px #242424;
--webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
--moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
--o-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+	box-shadow: inset 0px 0px 50px 0px white,5px 5px 5px 2px #242424;
+    -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+    -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+    -o-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
 }
 
+.mc-nav-bar {
+	opacity:.8;
+}
 
 
 .mc-searchbox {
@@ -28,7 +77,7 @@
 	height:  100%;
 	background-color: white;
 	border: 0;
-	padding: 20px 10px; line-height: 28px;
+	/* padding: 20px 10px; line-height: 28px; */
 	
 }
 
