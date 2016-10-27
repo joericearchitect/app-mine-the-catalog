@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+
+    <title>Mine the Catalog - Where music DNA meetings Passion meets Community</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/vendor/bootstrap.css" rel="stylesheet">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/musiccatelog.css" rel="stylesheet">
+  </head>
+
+
+    <nav class="navbar navbar-dark bg-inverse navbar-inverse navbar-fixed-top ">
+    <div class="row">
+      <a class="navbar-brand" href="#">Mine the Catalog</a>
+      <div class=" col-md-3">
+       <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div id="mc-text-holder-nav4" class="col-md-9 mc-text-box-holder-nav" >
+      	<input name="k" class="mc-searchbox" type="text" placeholder="&nbsp;Search for your favorite artists, songs, genres, etc">
+      </div>
+     </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="jumbo" class="jumbotron mc-background">
+      <div class="container" style="margin-top:30rem">
+         <div id="mc-text-holder" class="mc-textbox-holder" data-spy="affix" data-offset-top="250">
+         	<input name="k" class="mc-searchbox" type="text" placeholder="&nbsp;Search for your favorite artists, songs, genres, etc">
+         </div>
+      
+                                        
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce 
+dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut 
+fermentum massa justo sit amet risus. Etiam porta sem malesuada magna 
+mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce 
+dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut 
+fermentum massa justo sit amet risus. Etiam porta sem malesuada magna 
+mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis 
+in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. 
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+ ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© Company 2016</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/tether.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+    $( document ).ready(function() {
+ 
+        var backgroundNum = getRandomInt(1, 13)
+        /* var backgroundNum = 1; */ 
+        
+        var urlString = 'url(images/mine-cat-background-' + backgroundNum + '.jpg)';
+        console.log($('.mc-background').css("background-image"));
+        console.log(urlString);
+        $('.mc-background').css("background-image", urlString);
+        console.log($('.mc-background').css("background-image"));
+        console.log( "ready!" );
+    });
+    
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }	
+    
+    $('#mc-text-holder').on('affixed.bs.affix', debounce(function() {
+        alert('bs-affix Fired + 1!');
+    }, 250, false));
+
+
+    $('#mc-text-holder').on('affixed.bs.affix', debounce(function() {
+        alert('bs-affix Fired + 1!');
+    }, 250, false));
+
+  /*   $('#mc-text-holder').on('affix.bs.affix', function() {
+        alert('bs-affix Fired + 1!');
+    }); */
+    
+    function handleScrollEvent() {
+        console.log('bs-affix Fired + 1!');
+    }
+    
+    function debounce(func, wait, immediate) {
+    	var timeout;
+    	return function() {
+    		var context = this, args = arguments;
+    		var later = function() {
+    			timeout = null;
+    			if (!immediate) func.apply(context, args);
+    		};
+    		var callNow = immediate && !timeout;
+    		clearTimeout(timeout);
+    		timeout = setTimeout(later, wait);
+    		if (callNow) func.apply(context, args);
+    	};
+    };
+    </script>
+  
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+</body></html>

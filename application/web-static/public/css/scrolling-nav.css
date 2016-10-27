@@ -1,0 +1,119 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+	background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 0px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 20px;
+    }
+}
+
+.mc-hide-hero-search-holder {
+	opacity: 0;
+}
+
+
+.mc-searchbox {
+	width: 100%;
+	height:  100%;
+	background-color: white;
+	border: 0;
+	border-radius: 10px;
+	/* padding: 20px 10px; line-height: 28px; */
+	
+}
+
+.mc-text-box-holder-nav {
+	width: 30rem;
+	height: 6rem;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.mc-textbox-holder {
+	min-width: 200px;
+	width: 29rem%;
+	height: 7rem;
+	background-color: white;	
+	opacity: 1;
+	border-radius: 15px;
+	box-shadow: inset 0px 0px 50px 0px white,5px 5px 5px 2px #242424;
+    -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+    -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+    -o-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+}
+	
+.mc-scroll-target {
+	
+}
+
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+	width: 100%;
+	height:  100%;
+	background-color: white;
+	border: 0;
+	
+    background-image: url("../images/mine-cat-background-1.jpg");
+    background-size: cover;
+    height: 500px;	
+	background-attachment: fixed; 
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}

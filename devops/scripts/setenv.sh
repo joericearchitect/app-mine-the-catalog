@@ -7,16 +7,16 @@
 #    Uses the Dockerfile in this same git repo
 # *********************************************************************************
 
-SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
-APP_CODE_DIR=$SCRIPTS_DIR/../../application/web-static
+export SCRIPTS_DIR="$(cd "$(dirname "$0")" && pwd)"
+export APP_CODE_DIR=$SCRIPTS_DIR/../../application/web-static
 
-MACHINE_NAME_SITE=minecat-sites
+export MACHINE_NAME_SITE=minecat-sites
 
-NAMESPACE=jarch
-IMAGE_NAME=app-mcat-static-web
-CONTAINER_NAME=mcat-static-web
+export NAMESPACE=jarch
+export IMAGE_NAME=app-mcat-static-web
+export CONTAINER_NAME=mcat-static-web
 
-ECR_REPO=193862077204.dkr.ecr.us-east-1.amazonaws.com/jarch
+export ECR_REPO=193862077204.dkr.ecr.us-east-1.amazonaws.com/jarch
 
-SITE_IMAGE_NAME_LOCAL=$NAMESPACE/$IMAGE_NAME
-SITE_IMAGE_NAME_REPO=$ECR_REPO:$IMAGE_NAME
+export SITE_IMAGE_NAME_LOCAL=$NAMESPACE/$IMAGE_NAME
+export SITE_IMAGE_NAME_REPO=$ECR_REPO:$IMAGE_NAME

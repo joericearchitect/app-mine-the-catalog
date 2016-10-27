@@ -9,6 +9,7 @@ body {
 
 .mc-background {
     /* background-repeat: no-repeat; */
+    /* background-image: url("../images/mine-cat-background-1.jpg"); */
     background-size: cover;
     height: 500px;	
 	background-attachment: fixed; 
@@ -27,14 +28,7 @@ body {
     }
 }
 
-.affix {
-      top: 0;
-      position: fixed;
-}
 
-.affix + .mc-textbox-holder {
-      padding-top: 70px;
-}
   
 /* @media (min-width:544px) {
     .jumbotron {
@@ -50,21 +44,24 @@ body {
         font-size: 63px
     }
 } */
-@media screen and (min-width: 768px) {
-  .jumbotron {
-        padding-top: 30rem;
-  }
-}
+
 .mc-textbox-holder {
 	min-width: 200px;
 	width: 29rem%;
 	height: 7rem;
-	background-color: white;
+	background-color: white;	
 	opacity: 1;
 	box-shadow: inset 0px 0px 50px 0px white,5px 5px 5px 2px #242424;
     -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
     -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
     -o-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+}
+
+.mc-text-box-holder-nav {
+	width: 30rem;
+	height: 6rem;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .mc-nav-bar {
@@ -77,6 +74,7 @@ body {
 	height:  100%;
 	background-color: white;
 	border: 0;
+	border-radius: 10px;
 	/* padding: 20px 10px; line-height: 28px; */
 	
 }
